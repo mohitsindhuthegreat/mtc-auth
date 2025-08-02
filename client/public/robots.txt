@@ -1,0 +1,46 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /app/
+Disallow: /user-management/
+Disallow: /webhooks/
+Disallow: /blacklist/
+Disallow: /activity-logs/
+Disallow: /integration/
+Disallow: /code-editor/
+
+# Allow specific pages for SEO
+Allow: /
+Allow: /firebase-login
+Allow: /docs
+Allow: /features
+Allow: /pricing
+Allow: /contact
+
+# Brand protection and monopoly files
+Allow: /phantom-auth-brand-dominance.html
+Allow: /phantom-auth-monopoly-seo.html
+Allow: /brand-seo-booster.html
+Allow: /google-search-console-meta.html
+Allow: /brand-authority-signals.json
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://phantomauth.com/sitemap.xml
+
+# Block common bot patterns
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
