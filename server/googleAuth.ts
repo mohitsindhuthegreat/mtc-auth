@@ -50,7 +50,7 @@ export async function setupAuth(app: Express) {
 
   // Google OAuth Strategy
   const callbackURL = process.env.NODE_ENV === 'production' 
-    ? `${process.env.DEPLOYED_URL || 'https://74d546e9-99e5-43b8-a9b2-c52707cc2e9a-00-1yu8lfwwfzc0f.janeway.replit.dev'}/api/auth/google/callback`
+    ? `${process.env.DEPLOYED_URL || 'https://mtc-auth.onrender.com'}/api/auth/google/callback`
     : "/api/auth/google/callback";
     
   console.log(`Setting up Google OAuth with callback URL: ${callbackURL}`);
